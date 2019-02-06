@@ -1,4 +1,4 @@
-# WEB_Aplikacja (APBD) ASP.NET Application
+# WEB_Aplikacja (APBD) ASP.NET
 
 Aplikacja webową zgodnie z poniższymi wymaganiami:
 
