@@ -11,3 +11,5 @@ Druga część powinna umożliwiać dodawanie klienta. Rabat jest listą rozwija
 Przykładowy interfejs aplikacji:
 
 ![alt text](https://github.com/s15444/WEB_Aplikacja-APBD/blob/master/packages/interfejs.png)
+
+http://localhost:58245/
