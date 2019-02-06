@@ -1,0 +1,66 @@
+﻿@model OsobyIndexViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Add Osoba</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m => m.Osoba.FirstName)
+        </div>
+        <div class="col-md-3">
+            @Html.TextBoxFor(m => m.Osoba.FirstName)
+            @Html.ValidationMessageFor(m => m.Osoba.FirstName)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m => m.Osoba.LastName)
+        </div>
+        <div class="col-md-3">
+            @Html.TextBoxFor(m => m.Osoba.LastName)
+            @Html.ValidationMessageFor(m => m.Osoba.LastName)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m => m.Osoba.IdType)
+        </div>
+        <div class="col-md-3">
+            @Html.DropDownListFor(m => m.Osoba.IdType, Model.TypesSelectList)
+            @Html.ValidationMessageFor(m => m.Osoba.IdType)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <input type = "submit" value = "Add" />
+        </div>
+    </div>
+}
+<h2>Osoby list:</h2>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Rabat</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var a in Model.IEOsoby)
+        {
+        <tr>
+            <td>@a.FirstName</td>
+            <td>@a.LastName</td>
+            <td>@a.Type.Rabat</td>
+        </tr>
+        }
+    </tbody>
+</table>
