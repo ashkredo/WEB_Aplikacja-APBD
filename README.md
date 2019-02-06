@@ -1,4 +1,4 @@
-# WEB_Aplikacja (APBD) .NET Core
+# WEB_Aplikacja (APBD) .NET
 
 Aplikacja webową zgodnie z poniższymi wymaganiami:
 
